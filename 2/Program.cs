@@ -11,11 +11,9 @@ int numberTwo = Convert.ToInt32(Console.ReadLine());
 if(numberOne > numberTwo) {
   Console.WriteLine($"max = {numberOne}, min = {numberTwo}");
 }
-else {
-  if(numberOne == numberTwo) {
-    Console.WriteLine("Числа равны");
-  }
-  else {
+else if(numberOne < numberTwo) {
     Console.WriteLine($"max = {numberTwo}, min = {numberOne}");
   }
+else {
+  Console.WriteLine("Числа равны");
 }
